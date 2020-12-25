@@ -29,7 +29,7 @@ function createStars() {
     star.classList.add(starClass[y]);
     star.style.position = 'absolute';
     star.style.left = Math.random() * window.innerWidth + 'px';
-    star.style.top = Math.random() * window.innerHeight + 'px';
+    star.style.top = Math.random() * (6 * window.innerHeight) + 'px';
     star.style.transform = `rotate(${rotate})`;
     star.style.filter = 'contrast(150%)';
  
@@ -115,8 +115,13 @@ imgArr.forEach(function (item) {
 })
 });
 
+// Click on gift to Gallery
 const giftback = document.querySelector('.giftBack');
+const gallery = document.querySelector('.gallery')
+
+window.onload = gallery.remove();
 
 giftback.addEventListener('click', function() {
     giftback.remove();
+    document.body.append(gallery);
 })

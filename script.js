@@ -103,7 +103,7 @@ function imgChange () {
 // Change images
 let x = 0;
 const images = ['./2012/all.jpg', './2013/stul.jpg', './2014/all.jpg', './2015/all.jpg','./2016/all.jpg', './2017/all.jpg', './2018/all.jpg', './2019/všichni.jpg','./2020/all1.jpg'];
-const captions = ['Rok 2012', 'Rok 2013', 'Rok 2014', 'Rok 2015', 'Rok 2016', 'Rok 2017', 'Rok 2018', 'Rok 2019', 'Červenec 2020'];
+const captions = ['Rok 2012', 'Rok 2013', 'Rok 2014', 'Rok 2015', 'Rok 2016', 'Rok 2017', 'Rok 2018', 'Rok 2019', 'Červen 2020'];
 const time = 5000;
 const caption = document.getElementById('caption');
 

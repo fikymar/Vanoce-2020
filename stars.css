@@ -111,9 +111,9 @@ nav {
     .headline {
          font-size: 20px;
     }   
-    .gallery {
+    /*.gallery {
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-        }
+        }*/
 
     @keyframes fall {
      100% {
@@ -123,12 +123,12 @@ nav {
         
     
 }
-
+/*
 @media screen and (max-width:600px) {
     .gallery {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
-}
+}*/
 
 
 .nav-active {
@@ -228,6 +228,7 @@ h1 {
     background: radial-gradient(ellipse at center, var(--darkblue) 0%,var(--blue) 100%);
    
     box-shadow: inset 0 0 5vh rgba(255,255,255,1), 0 20px 50px rgba(0,0,0,0.5);
+    
 }
    .gift {
      z-index: 1;
@@ -240,6 +241,12 @@ h1 {
      background:var(--bluemetallic);
      border: 1px solid var(--darkblue);
      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   }
+   .gift::before {
+    content: 'Klikni na mě!';
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
    }
    
    .cover {
@@ -472,11 +479,13 @@ h1 {
     min-height: 100vh;
     grid-gap: 2rem;
     margin: 2rem 2rem;
+  
 }
 
 .img-container {
     overflow: hidden;
-   
+  
+  
 }
 
 .img-container img {
@@ -503,4 +512,18 @@ figcaption {
     font-family: 'Parisienne', cursive;
     font-weight: bold;
     font-size: 1.5rem;;
+}
+
+@media screen and (max-width:1024px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+
+}
+
+
+@media screen and (max-width:600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
 }
